@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F4F7F8">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chi tiết lịch hẹn"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#008577"
+        android:padding="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="20dp"
+        android:layout_marginTop="12dp"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/txtDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên lịch hẹn"
+            android:textSize="22sp"
+            android:tex1tStyle="bold"
+            android:textColor="#222222"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Địa điểm"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtDetailLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Địa điểm"
+            android:textColor="#222222"
+            android:textSize="17sp"
+            android:paddingBottom="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thời gian"
+            android:textColor="#777777"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtDetailDateTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thời gian"
+            android:textColor="#222222"
+            android:textSize="17sp"
+            android:paddingBottom="20dp" />
+
+        <Switch
+            android:id="@+id/switchDetailReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhắc nhở" />
+
+        <TextView
+            android:id="@+id/txtReminderStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đang tắt"
+            android:textColor="#777777"
+            android:paddingTop="8dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QUAY LẠI"
+        android:textColor="#008577"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="XÓA LỊCH HẸN"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#D32F2F"
+        android:layout_marginTop="12dp" />
+
+</LinearLayout>
